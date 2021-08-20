@@ -4,7 +4,7 @@
 keytool -genkeypair -alias yourdomain -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore yourdomain.p12 -validity 3650 -storepass yourpassword
 ```
 
-## Generate Self-Signed Certificate (with localhost)
+## Generate Self-Signed Certificate (for localhost)
 
 If you are going to use this certificate on localhost then add the following -ext “SAN:c=DNS:localhost,IP:127.0.0.1”. So for localhost use, the complete command will look like this:
 ```shell
