@@ -1,0 +1,26 @@
+Configuration:
+  # ...
+  Appenders:
+    Console:
+      - name: STDOUT
+        target: SYSTEM_OUT
+        Filters:
+          - LevelRangeFilter:
+              maxLevel: TRACE
+              minLevel: INFO
+              onMatch: ACCEPT
+              onMismatch: DENY
+      - name: STDERR
+        target: SYSTEM_ERR
+        Filters:
+          - LevelRangeFilter:
+              maxLevel: ERROR
+              minLevel: ERROR
+              onMatch: ACCEPT
+              onMismatch: DENY
+  Loggers:
+    Root:
+      level: INFO
+      AppenderRef:
+        - ref: STDOUT
+        - ref: STDERR
