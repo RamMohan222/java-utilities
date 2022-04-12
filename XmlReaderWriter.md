@@ -63,7 +63,7 @@ public class XmlReaderWriter {
 ### input.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "file:///C:\Users\rmolaba1\eclipse-workspace\mapping-namespace-generator\src\main\resources\note.dtd">
+<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "file:///C:\Users\resources\note.dtd">
 <note>
 	<to>Tove</to>
 	<from>Jani</from>
