@@ -9,9 +9,9 @@ for more info [Spring Docs](https://docs.spring.io/spring-boot/docs/current/refe
 To Compile:
 cmd>javac -cp <classpath for zip/jar files> Main.java
 To Run:
-cmd>java -cp <classpath for zip/jar files> Main
+cmd>java -cp <classpath for zip/jar files>; Main
 ```
-
+**NOTE:** The **;** is used to add multiple lib locations.
 ```cmd
 cmd> javac -cp ./* Main.java
 cmd> java -cp ./*; Main
