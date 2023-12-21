@@ -12,4 +12,7 @@ To Run:
 cmd>java -cp <classpath for zip/jar files> Main
 ```
 
-
+```cmd
+cmd> javac -cp ./* Main.java
+cmd> java -cp ./*; Main
+```
