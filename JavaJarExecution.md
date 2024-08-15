@@ -16,3 +16,19 @@ cmd>java -cp <classpath for zip/jar files>; Main
 cmd> javac -cp ./* Main.java
 cmd> java -cp ./*; Main
 ```
+**To create a executable JAR from CLI**
+```shell
+cd src
+javac com/example/*.java
+echo "Manifest-Version: 1.0" > manifest.txt
+echo "Main-Class: com.example.MainClass" >> manifest.txt
+jar cfm MyApp.jar manifest.txt com/example/*.class
+```
+**To create a library JAR from CLI**
+```shell
+cd src
+javac com/example/*.java
+jar cf MyApp.jar com/example/*.class
+(or)
+jar cf MyApp.jar *.class
+```
