@@ -22,6 +22,25 @@ java -jar yourApp.jar [JVM_OPTIONS]
 -Dcom.sun.management.jmxremote.ssl=false
 ```
 
+#### With Security :
+```shell
+-Dcom.sun.management.jmxremote
+-Dcom.sun.management.jmxremote.port=9010
+-Dcom.sun.management.jmxremote.ssl=true
+-Dcom.sun.management.jmxremote.authenticate=true
+-Dcom.sun.management.jmxremote.access.file=jmxremote.access
+-Dcom.sun.management.jmxremote.password.file=jmxremote.password
+
+// files
+jmxremote.access
+monitorRole   readonly
+controlRole   readwrite
+
+jmxremote.password
+monitorRole   monitorpassword
+controlRole   controlpassword
+```
+
 ##### Prefer IPv4 over IPv6:
 ```shell
 -Djava.net.preferIPv4Stack=true
